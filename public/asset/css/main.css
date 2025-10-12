@@ -1,0 +1,320 @@
+
+
+
+
+
+/* ---------------------
+   General Styles
+--------------------- */
+/* ---------------------
+   Header / Navbar Fix
+--------------------- */
+header, nav {
+  position: fixed; /* keeps navbar at top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* white background behind logo */
+  z-index: 999; /* keep it above hero images */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* optional subtle shadow */
+}
+
+/* Push hero section down so it's not hidden under navbar */
+#hero {
+  margin-top: 100px; /* adjust based on navbar height (e.g. 80px–120px) */
+}
+
+
+/* Logo and Navbar spacing */
+header img {
+  height: 50px; /* optional: control logo size */
+  margin-right: 25px; /* space between logo and menu */
+  vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* evenly spaces menu items */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px; /* top-bottom / left-right padding */
+  background-color: #fff;
+  border-bottom: 1px solid #eee; /* subtle line like your screenshot */
+}
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0px;
+  line-height: 1.6;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* ---------------------
+   Hero Section
+--------------------- */
+.hero .carousel-item {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.hero .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.hero .container {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn-get-started {
+  display: inline-block;
+  background: #00a8ff;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-get-started:hover {
+  background: #007ad9;
+}
+
+/* ---------------------
+   Featured Services
+--------------------- */
+.featured-services .service-item {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.featured-services .service-item:hover {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-item .icon {
+  font-size: 30px;
+  color: #00a8ff;
+  margin-bottom: 20px;
+}
+
+/* ---------------------
+   Call to Action
+--------------------- */
+.call-to-action {
+  background: #007ad9;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.call-to-action .cta-btn {
+  background: #fff;
+  color: #007ad9;
+  padding: 12px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.call-to-action .cta-btn:hover {
+  background: #e0e0e0;
+}
+
+/* ---------------------
+   Services / Departments
+--------------------- */
+.icon-box {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.icon-box .icon {
+  font-size: 36px;
+  color: #00a8ff;
+  margin-bottom: 15px;
+}
+
+.department-item {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.department-item:hover {
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------------------
+   Doctors Section
+--------------------- */
+.doctor-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.doctor-item img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.doctor-item h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.doctor-item span {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ---------------------
+   Contact / Forms
+--------------------- */
+.info-box {
+  background: #f5f5f5;
+  padding: 20px;
+  border-left: 5px solid #00a8ff;
+  margin-bottom: 20px;
+}
+
+.php-email-form {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.php-email-form input,
+.php-email-form select,
+.php-email-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.php-email-form button {
+  background: #00a8ff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.php-email-form button:hover {
+  background: #007ad9;
+}
+
+/* ---------------------
+   Responsive Tweaks
+--------------------- */
+@media (max-width: 768px) {
+  .hero .container {
+    left: 5%;
+    bottom: 15%;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn-get-started {
+    padding: 8px 20px;
+  }
+
+  .doctor-item img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ---------------------
+   Navbar Overlap Fix for All Pages
+--------------------- */
+main {
+  margin-top: 110px; /* adjust if still slightly hidden */
+}
+
+/* for smaller screens where navbar grows taller */
+@media (max-width: 768px) {
+  main {
+    margin-top: 140px;
+  }
+}
