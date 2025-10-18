@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Doctor;
+use Illuminate\Contracts\View\View;
+use Illuminate\Contracts\View\Factory;
 
 class DoctorController extends Controller
 {
+    public function index(): Factory|View // Show doctors
+    {
+        $doctors = Doctor::all();
+        return view('admin.showdoc', compact('doctors'));
+    }
+
     public function create()
     {
         return view('admin.add_doctor');

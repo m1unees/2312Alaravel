@@ -12,6 +12,7 @@
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+
 </head>
 <body>
 
@@ -197,7 +198,7 @@
                   data-feather="briefcase"></i><span>doctor</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{ route ('add doctor') }}">add doctor</a></li>
-                <li><a class="nav-link" href="widget-data.html">show doctor</a></li>
+                <li><a class="nav-link" href="{{ route ('show.doctor') }}">show doctor</a></li>
               </ul>
             </li>
             <li class="dropdown">

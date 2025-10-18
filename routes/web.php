@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AppointmentController;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\DoctorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,7 +94,14 @@ Route::get('/add doctor', function () {
     return view('admin.insertdoc');
 })->name('add doctor');
 
-use App\Http\Controllers\DoctorController;
+
 
 Route::get('/doctor/add', [doctorController::class, 'create'])->name('doctor.add');
 Route::post('/doctor/store', [doctorController::class, 'store'])->name('doctor.store');
+
+
+
+
+
+
+Route::get('/showdoctor', [DoctorController::class, 'index'])->name('show.doctor');
