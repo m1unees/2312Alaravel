@@ -25,8 +25,8 @@
                 <img src="{{ asset('storage/' . $doc->image) }}" width="80" height="80" class="rounded">
             </td>
             <td>
-                <a href="{{ url('edit_doctor/' . $doc->id) }}" class="btn btn-primary text-white">Edit</a>
-                <a href="{{ url('delete_doctor/' . $doc->id) }}" 
+                <a href="{{ url('/edit/' . $doc->id) }}" class="btn btn-primary text-white">Edit</a>
+                <a href="{{ url('/destroy/' . $doc->id) }}" 
                    class="btn btn-dark text-white" 
                    onclick="return confirm('Are you sure you want to delete this doctor?')">Delete</a>
             </td>

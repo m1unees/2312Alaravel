@@ -105,3 +105,19 @@ Route::post('/doctor/store', [doctorController::class, 'store'])->name('doctor.s
 
 
 Route::get('/showdoctor', [DoctorController::class, 'index'])->name('show.doctor');
+
+
+
+
+// Edit form page
+Route::get('/edit/{id}', [DoctorController::class, 'edit'])->name('doctor.edit');
+
+// Update doctor (form submit)
+Route::put('/edit/{id}', [DoctorController::class, 'update'])->name('doctor.update');
+
+// Delete doctor
+Route::get('/destroy/{id}', [DoctorController::class, 'destroy'])->name('doctor.destroy');
+
+
+// Route::get('/edit/{id}', [DoctorController::class, 'update']);
+// Route::get('/destroy/{id}', [DoctorController::class, 'destroy']);
