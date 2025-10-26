@@ -169,9 +169,26 @@
                 Settings
               </a>
             <div class="dropdown-divider"></div>
-             <a href="/login" class="dropdown-item has-icon text-danger">
-    <i class="fas fa-sign-out-alt"></i> Logout
-</a>
+       <div class="dropdown-divider"></div>
+
+    @auth
+      <form method="POST" action="{{ route('logout') }}" class="px-3">
+        @csrf
+        <button type="submit" class=" dropdown-item has-icon btn btn-danger btn-block  ">
+           <i class="fas fa-sign-out-alt"></i>Logout</button>
+      </form>
+   @else
+
+
+   
+      <a href="{{ route('login') }}" class="btn btn-primary btn-block">Login</a>
+     @endauth
+  </div>
+
+
+             <!-- <a href="/login" class="dropdown-item has-icon text-danger">
+    <i class="fas fa-sign-out-alt"></i> Logout -->
+<!-- </a> -->
 
 
               </a>
